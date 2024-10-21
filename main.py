@@ -1,10 +1,7 @@
-n = int(input("Введите количество школьников:"))
-k = int(input("Введите количество яблок: "))
+# Запрашиваем у пользователя число
+n = int(input("Введите число: "))
 
-yabloki = k // n
-ostatok = k - yabloki*n
-
-
-print(yabloki)
-print ("По ", yabloki, "каждому школьнику.")
-print(ostatok, "яблок останется в корзине.")
+# Используем цикл for для вывода четных чисел
+for i in range(n + 1):
+    if i % 2 == 0:
+        print(i)
